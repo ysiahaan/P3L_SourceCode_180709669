@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Georgia;
+    background-color: whitesmoke;
+}
+
+#app{
+    display: flex;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+#app .sidebar{
+    background-color: #0c1b25;
+    transition: margin-left .5s ease-out;
+    min-width: 250px;
+}
+
+#app .sidebar-hide{
+    margin-left: -250px;
+}
+
+#app .sidebar .header{
+    background-color: #193446;
+    text-align: center;
+    padding: 32px 8px;
+    
+}
+
+#app .sidebar .header .brand{
+    font-family: 'Segoe UI';
+    color: rgb(136, 150, 175);
+    font-weight: 500;
+    font-size: 32px;
+    
+}
+
+#app .sidebar .header .brand span{
+    color: rgb(54, 92, 161);
+    font-weight: 500;
+    font-style: italic;
+    
+}
+
+#app .sidebar .body{
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+#app .sidebar .body a{
+    text-decoration: none;
+}
+
+#app .sidebar .body .item{
+    color: #ccd6ff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0,2);
+    padding: 10px 20px;
+    font-family: 'Segoe UI';
+}
+
+#app .sidebar .body .item:hover{
+    background-color: rgba(235, 77, 75, 0,5);
+}
+
+.active{
+    background-color: #132836;
+}
+
+.content{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+}
+
+
+.content .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgb(255, 255, 255);
+}
+
+.content .header .hamburger{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 22px;
+}
+
+.content .header .hamburger div{
+    border: 1px solid #A5B1C2;
+    margin-top: 6px;
+}
+
+.content .header .logout{
+    font-family: Arial;
+    color: #95AFC0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.content .header .logout i{
+    margin-left: 4px;
+}
+
+.content .body{
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+.content .body .title{
+    color: #4B6584;
+    font-size: 24px;
+}
+
+.ahead{
+    background-color: white;
+    padding: 30px 50px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(148, 148, 148);
+}
+.abody{
+    background-color: white;
+    padding: 1px 10px 30px 50px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(148, 148, 148);
+}
+.abody .box{
+    border: 1px solid;
+    border-color: rgb(221, 221, 221);
+    margin: 30px;
+}
